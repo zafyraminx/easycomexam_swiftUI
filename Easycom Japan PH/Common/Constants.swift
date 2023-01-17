@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Constants {
+    static var baseURL = "https://jsonplaceholder.typicode.com"
+}

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Response: Codable {
+    var data: [Entry]
+    
+}

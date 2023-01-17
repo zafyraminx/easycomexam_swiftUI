@@ -11,7 +11,8 @@ import SwiftUI
 struct Easycom_Japan_PHApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = HomeViewModel()
+            HomeScreen().environmentObject(viewModel)
         }
     }
 }

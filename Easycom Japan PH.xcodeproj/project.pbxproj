@@ -14,6 +14,13 @@
 		FF09BF9E29753131003FC3A7 /* Easycom_Japan_PHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BF9D29753131003FC3A7 /* Easycom_Japan_PHTests.swift */; };
 		FF09BFA829753131003FC3A7 /* Easycom_Japan_PHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFA729753131003FC3A7 /* Easycom_Japan_PHUITests.swift */; };
 		FF09BFAA29753131003FC3A7 /* Easycom_Japan_PHUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFA929753131003FC3A7 /* Easycom_Japan_PHUITestsLaunchTests.swift */; };
+		FF09BFBB29753304003FC3A7 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFBA29753304003FC3A7 /* HomeScreen.swift */; };
+		FF09BFBD29753440003FC3A7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFBC29753440003FC3A7 /* HomeViewModel.swift */; };
+		FF09BFBF29753508003FC3A7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFBE29753508003FC3A7 /* Response.swift */; };
+		FF09BFC12975356B003FC3A7 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFC02975356B003FC3A7 /* Entry.swift */; };
+		FF09BFC329753650003FC3A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFC229753650003FC3A7 /* Constants.swift */; };
+		FF09BFC52975649E003FC3A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFC42975649E003FC3A7 /* Extensions.swift */; };
+		FF09BFC72975790A003FC3A7 /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09BFC62975790A003FC3A7 /* DetailsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		FF09BFA329753131003FC3A7 /* Easycom Japan PHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easycom Japan PHUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF09BFA729753131003FC3A7 /* Easycom_Japan_PHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easycom_Japan_PHUITests.swift; sourceTree = "<group>"; };
 		FF09BFA929753131003FC3A7 /* Easycom_Japan_PHUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easycom_Japan_PHUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF09BFBA29753304003FC3A7 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		FF09BFBC29753440003FC3A7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FF09BFBE29753508003FC3A7 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		FF09BFC02975356B003FC3A7 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		FF09BFC229753650003FC3A7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF09BFC42975649E003FC3A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FF09BFC62975790A003FC3A7 /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +108,11 @@
 		FF09BF8B2975312E003FC3A7 /* Easycom Japan PH */ = {
 			isa = PBXGroup;
 			children = (
+				FF09BFB9297531F7003FC3A7 /* Common */,
+				FF09BFB8297531E5003FC3A7 /* ViewModels */,
+				FF09BFB7297531D9003FC3A7 /* Models */,
+				FF09BFB6297531C1003FC3A7 /* Views */,
 				FF09BF8C2975312E003FC3A7 /* Easycom_Japan_PHApp.swift */,
-				FF09BF8E2975312E003FC3A7 /* ContentView.swift */,
 				FF09BF9029753131003FC3A7 /* Assets.xcassets */,
 				FF09BF9229753131003FC3A7 /* Preview Content */,
 			);
@@ -125,6 +142,42 @@
 				FF09BFA929753131003FC3A7 /* Easycom_Japan_PHUITestsLaunchTests.swift */,
 			);
 			path = "Easycom Japan PHUITests";
+			sourceTree = "<group>";
+		};
+		FF09BFB6297531C1003FC3A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF09BF8E2975312E003FC3A7 /* ContentView.swift */,
+				FF09BFBA29753304003FC3A7 /* HomeScreen.swift */,
+				FF09BFC62975790A003FC3A7 /* DetailsScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF09BFB7297531D9003FC3A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF09BFBE29753508003FC3A7 /* Response.swift */,
+				FF09BFC02975356B003FC3A7 /* Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF09BFB8297531E5003FC3A7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FF09BFBC29753440003FC3A7 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FF09BFB9297531F7003FC3A7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FF09BFC229753650003FC3A7 /* Constants.swift */,
+				FF09BFC42975649E003FC3A7 /* Extensions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF09BFC12975356B003FC3A7 /* Entry.swift in Sources */,
 				FF09BF8F2975312E003FC3A7 /* ContentView.swift in Sources */,
 				FF09BF8D2975312E003FC3A7 /* Easycom_Japan_PHApp.swift in Sources */,
+				FF09BFC52975649E003FC3A7 /* Extensions.swift in Sources */,
+				FF09BFBB29753304003FC3A7 /* HomeScreen.swift in Sources */,
+				FF09BFC329753650003FC3A7 /* Constants.swift in Sources */,
+				FF09BFBD29753440003FC3A7 /* HomeViewModel.swift in Sources */,
+				FF09BFBF29753508003FC3A7 /* Response.swift in Sources */,
+				FF09BFC72975790A003FC3A7 /* DetailsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +515,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
